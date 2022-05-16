@@ -1,0 +1,25 @@
+<html>
+    <head>                                 
+        <title> hola buenas </title>
+    </head>
+    <body>
+        <p>  <h1 id= "soy_una_planta">
+        </h1>  araze </p>
+  
+    <script>
+        var videogames = ["Geometry dash", "spore", "Minecraft", "five nigths at freddy 2","mario maker 2","plantas vs zombies 2" ];
+       
+        document.getElementById("soy_una_planta").innerHTML= videogames;
+        function pou(){
+            videogames.push(document.getElementById("nombre").value);
+            document.getElementById("soy_una_planta").innerHTML= videogames;
+            videogames.sort();
+    
+    }
+        videogames.push(document.getElementById("nombre").value);                                     
+        </script>
+        
+        <input type="text" id="nombre"> <button id="send" onclick="pou()">send</button>
+
+    </body>
+        </html>
